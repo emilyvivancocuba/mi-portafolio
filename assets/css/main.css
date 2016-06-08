@@ -457,12 +457,12 @@ a.info{
 .gif_laboratoria{
   margin-top: 100px;
   margin-bottom: 30px;
-  background-image: url(../images/labo1.gif);
+  background-image: url(../images/labo2.gif);
   display: table;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: color;
   background-repeat: no-repeat;
-  background-position: 100% 23%;
+  background-position: 100% 32%;
   background-size: cover;
   height: 180px;
 }
@@ -609,6 +609,22 @@ a.github{
   .mis_proyectos .row{
     padding-top: 0px;
   }
+  section.w-100 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  #acerca_de_mi {
+    padding-top: 20px;
+  }
+  .myself:first-child {
+    margin-top: 20px;
+  }
+  #mis_trabajos {
+    padding-top: 60px;
+  }
+  #mis_trabajos h2:first-child{
+    padding-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 515px) {
@@ -620,7 +636,22 @@ a.github{
     margin-bottom: -43px;
   }
   .hero-text h2 {
-    font-size: 55px;
+    font-size: 50px;
+  }
+  .hero-text h2 span.front{
+    font-size: 30px;
+  }
+  .hero-text h3 {
+    font-size: 18px;
+  }
+  .hero-text h5{
+    font-size: 15px;
+  }
+  .myself{
+    font-size: 15px;
+  }
+  .myself span{
+    font-size: 17px;
   }
 }
 
@@ -635,12 +666,20 @@ a.github{
   }
 }
 
-
+@media only screen and (max-width: 380px){
+  a.info i{
+    font-size: 14px;
+  }
+  .hovereffect a.info {
+    font-size: 11px;
+  }
+}
 
 @media only screen and (max-width: 330px){
   .hovereffect a.info {
     margin: 15px 0 0 0;
   }
+  
   .iconos-contacto {
     font-size: 35px;
   }
@@ -650,6 +689,9 @@ a.github{
   .btn_habilidad {
       padding: 5px 10px;
       font-size: 10px;
+  }
+  .icon_h {
+    margin-top: -4px;
   }
 }
 
