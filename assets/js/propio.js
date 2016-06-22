@@ -79,7 +79,7 @@ $(document).ready(function () {
     var hasCreatedObjects = false;
     $(window).scroll(function () {
         var y = $(this).scrollTop();
-        if (y >= 1700) { //depende de cuánto mida mi página de largo en px
+        if (y >= 1900) { //depende de cuánto mida mi página de largo en px
             if (!hasCreatedObjects) {
                 hasCreatedObjects = true;
                 $('#circunferencia_skill_html5').circliful({
@@ -140,9 +140,29 @@ $('a.scroll').click(function(e){
 
 //EFECTO AVATAR MIRADA DE DERECHA A IZQUIERDA EN FUNCION DEL PUNTERO
 
-$('#izquierda').mouseover(function() {
-	$('#avatar-autora').attr('src','assets/images/avatar1.png');
+// $('#izquierda').mouseover(function() {
+// 	$('#avatar-autora').attr('src','assets/images/avatar1.png');
+// });
+// $('#derecha').mouseover(function() {
+// 	$('#avatar-autora').attr('src','assets/images/avatar2.png');
+// });
+
+$(document).ready(function(){
+  setInterval(repetir_avatar, 600);
 });
-$('#derecha').mouseover(function() {
-	$('#avatar-autora').attr('src','assets/images/avatar2.png');
-});
+
+
+var cont_avatar=0
+
+function repetir_avatar() {
+  cont_avatar = cont_avatar % 2;
+
+  if (cont_avatar==1){
+    $('#avatar-autora').attr('src','assets/images/avatar1.png');
+  }
+  else{
+    $('#avatar-autora').attr('src','assets/images/avatar2.png');
+  }
+
+  cont_avatar++;
+}
